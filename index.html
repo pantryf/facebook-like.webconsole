@@ -1,0 +1,19 @@
+<html>
+<head>
+</head>
+<body>
+<header>
+  <h1>fblike</h1>
+  <em>Automatic Facebook Like through a Favourites Link.</em>
+</header>
+<main>
+  <h2>usage</h2>
+  <ul>
+    <li>Add/drag <a href="javascript: var es = []; var like = function() { var e = es.shift(); e.getElementsByClassName('UFILikeLink')[0].click(); console.log('fblike: '+e.getElementsByClassName('fcg')[0].innerText); }; var load = function() { console.log('fblike: <scroll down>'); window.scrollTo(0, document.body.scrollHeight); var t = document.getElementsByClassName('userContentWrapper'); for (var i=0; i<t.length; i++) { var te = t[i].getElementsByClassName('UFILikeLink')[0]; if (te && te.getAttribute('aria-pressed') == 'false') es.push(t[i]); } }; var act = function() { if (es.length) like(); else load(); setTimeout(act, 1000); }; act(); void(0)">this</a> link to your favourites bar.</li>
+    <li>When on Facebook page with <em>posts</em>, click the favourite.</li>
+  </ul>
+</main>
+<footer>
+</footer>
+</body>
+</html>
