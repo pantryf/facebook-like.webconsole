@@ -1,5 +1,3 @@
-# fblike
-
 Automatic Facebook Like through a Favourites Link.
 
 
